@@ -1,0 +1,94 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+.header {
+	background-image: url("../images/housenearlake.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+}
+
+.header__content {
+	background: linear-gradient(
+		96.31deg,
+		rgba(19, 24, 44, 0.768) 29.65%,
+		rgba(19, 24, 44, 0.096) 82.34%
+	);
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+.line {
+	width: 30%;
+	border: transparent;
+	border-top: 1px solid #dd6b20;
+	margin-right: 30px;
+	margin-top: 7px;
+}
+.full {
+	width: 33.33%;
+}
+.gallery {
+	width: 200px;
+}
+.rotate {
+	transform: rotate(-90deg);
+}
+.services__container {
+	display: flex;
+	align-items: flex-start;
+}
+.clockIcon {
+	color: #fff;
+}
+.footerImg {
+	background-image: url("../images/footerHouse.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+}
+.footer__container {
+	background: linear-gradient(
+		161.71deg,
+		rgba(19, 24, 44, 0.97) 12.15%,
+		rgba(19, 24, 44, 0) 87.58%
+	);
+	width: 100%;
+	height: 100%;
+}
+.footerBottom {
+	background: linear-gradient(
+			0deg,
+			rgba(19, 24, 44, 100%),
+			rgba(19, 24, 44, 60%)
+		),
+		url("../images/footerMountain.png");
+	background-repeat: repeat;
+	background-size: cover;
+}
+.bottom__container {
+	background: linear-gradient(
+		161.71deg,
+		rgba(19, 24, 44, 0.97) 10%,
+		rgba(19, 24, 44, 0) 100%
+	);
+	width: 100%;
+	height: 100%;
+}
+.deep {
+	background-color: rgba(19, 24, 44, 20%);
+}
+.deeper {
+	background-color: rgba(19, 24, 44, 60%);
+}
