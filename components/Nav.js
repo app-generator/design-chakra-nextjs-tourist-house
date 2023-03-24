@@ -9,13 +9,15 @@ import {
 	Spacer,
 } from "@chakra-ui/react";
 import { GrFacebookOption, GrInstagram } from "react-icons/gr";
+import { links } from "../utils/utils";
 
 const Nav = () => {
 	return (
 		<Flex
+			w='full'
 			alignItems='center'
 			minHeight={"10vh"}
-			padding={"30px 70px"}
+			padding={{ base: "30px", md: "30px 70px" }}
 			justifyContent='space-between'
 		>
 			<Box>
@@ -27,18 +29,17 @@ const Nav = () => {
 			<Spacer />
 
 			<HStack spacing='30px' display={{ base: "none", lg: "inline-block" }}>
-				<Link to='/' color='#fff' opacity={0.7} fontWeight='semibold'>
-					Home
-				</Link>
-				<Link href='#about' color='#fff' opacity={0.7} fontWeight='semibold'>
-					About
-				</Link>
-				<Link href='#services' color='#fff' opacity={0.7} fontWeight='semibold'>
-					Services
-				</Link>
-				<Link href='#contact' color='#fff' opacity={0.7} fontWeight='semibold'>
-					Contact
-				</Link>
+				{links.map((li) => (
+					<Link
+						href={li.link}
+						color='#fff'
+						opacity={0.7}
+						fontWeight='semibold'
+						key={li.id}
+					>
+						{li.name}
+					</Link>
+				))}
 			</HStack>
 			<Spacer />
 

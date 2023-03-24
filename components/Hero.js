@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
 	return (
 		<Flex
-			padding='30px 70px'
+			padding={{ base: "30px", md: "30px 70px" }}
 			minHeight='80vh'
 			width='full'
 			direction='column'

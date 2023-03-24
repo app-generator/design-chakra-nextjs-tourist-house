@@ -1,10 +1,10 @@
-import { Box, Flex, Heading, Text, Button, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
 import React from "react";
 import Nav from "./Nav";
 
 const Footer = () => {
 	return (
-		<Box>
+		<Box w='full'>
 			<Box
 				className='footerImg'
 				borderTop='1px'
@@ -29,7 +29,7 @@ const Footer = () => {
 					</Heading>
 					<Box className='line' width={150} marginBottom={5} />
 					<Text color='#f5f5f5' marginBottom={5}>
-						Fact that a reader will be distracted by the readable{" "}
+						Fact that a reader will be distracted by the readable
 					</Text>
 					<Button
 						colorScheme='yellow'
@@ -43,10 +43,11 @@ const Footer = () => {
 					</Button>
 				</Flex>
 			</Box>
+
 			<Box className='footerBottom' w='full'>
 				<Flex
 					className='bottom__container'
-					padding={70}
+					padding={"30px 0"}
 					w='full'
 					direction='column'
 					h='full'

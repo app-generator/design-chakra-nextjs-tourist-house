@@ -1,0 +1,74 @@
+import { Flex, Spacer, Box, Text, Icon } from "@chakra-ui/react";
+import { AiOutlineClockCircle, AiOutlineLike } from "react-icons/ai";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
+
+export const links = [
+	{
+		id: 1,
+		link: "/",
+		name: "Home",
+	},
+	{ id: 2, link: "#about", name: "About" },
+	{
+		id: 3,
+		link: "#services",
+		name: "Services",
+	},
+	{
+		id: 4,
+		link: "#contact",
+		name: "Contact",
+	},
+];
+
+export const IconText = () => (
+	<Flex
+		w='full'
+		alignItems='flex-start'
+		marginBottom={30}
+		justifyContent='space-between'
+		direction={{ base: "column", md: "row" }}
+	>
+		<TextItem
+			first
+			icon={AiOutlineClockCircle}
+			text='The standard chunk of Lorem Ipsum used'
+		/>
+		<Spacer />
+		<TextItem
+			icon={TbDeviceLandlinePhone}
+			text='It is a long established fact that'
+		/>
+		<Spacer />
+		<TextItem
+			icon={AiOutlineLike}
+			text='The standard chunk of Lorem Ipsum used'
+		/>
+	</Flex>
+);
+
+const TextItem = ({ first, icon, text }) => (
+	<Flex
+		w={{ base: "100%", md: first ? "37%" : "30%" }}
+		px={{ base: 0, md: 15 }}
+		alignItems='center'
+		marginBottom={{ base: 5, md: 0 }}
+	>
+		<Flex
+			padding='5px'
+			border='1px'
+			borderColor='gray.600'
+			alignItems='center'
+			justifyContent='center'
+			borderRadius='5px'
+			marginRight='30px'
+		>
+			<Icon as={icon} color='#fff' boxSize={6} />
+		</Flex>
+		<Box>
+			<Text color='#f5f5f5' opacity={0.7}>
+				{text}
+			</Text>
+		</Box>
+	</Flex>
+);
