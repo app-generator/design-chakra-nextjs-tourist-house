@@ -1,18 +1,11 @@
-import {
-	Box,
-	Heading,
-	Flex,
-	Text,
-	Spacer,
-	IconButton,
-	Icon,
-} from "@chakra-ui/react";
+import { Box, Heading, Flex, Text, Spacer } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 import gallery from "../images/gallery.png";
 import ellipse from "../images/ellipse.png";
 import Bedroom from "./Bedroom";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import Slider from "./Slider";
+
 const Gallery = () => {
 	return (
 		<Box w='full' pt='100px' position='relative'>
@@ -28,6 +21,7 @@ const Gallery = () => {
 			>
 				<Image src={ellipse} alt='Gallery' />
 			</Box>
+
 			<Heading as='h2' color='#FFFFFF' pb='15px'>
 				Gallery
 			</Heading>
@@ -45,7 +39,7 @@ const Gallery = () => {
 
 				<Box
 					w={{ base: "100%", lg: "66.66%" }}
-					px='15px'
+					px={{ lg: "15px" }}
 					mt={{ base: 15, lg: 0 }}
 				>
 					<Text color='#F5F5F5'>
@@ -55,45 +49,9 @@ const Gallery = () => {
 					</Text>
 				</Box>
 			</Flex>
+
 			<Bedroom />
-			<Flex w='full' alignItems='center' justifyContent='center'>
-				<Flex
-					alignItems='center'
-					justifyContent='center'
-					padding='10px'
-					border='1px'
-					borderColor='#f5f5f5'
-					borderRadius='full'
-					marginRight='20px'
-					cursor='pointer'
-				>
-					<Icon
-						as={AiOutlineArrowLeft}
-						boxSize={4}
-						color='#dd6b20'
-						bg='##dd6b20'
-					/>
-				</Flex>
-
-				<Box className='line gallery' />
-
-				<Flex
-					alignItems='center'
-					justifyContent='center'
-					padding='10px'
-					border='1px'
-					borderColor='#f5f5f5'
-					borderRadius='full'
-					cursor='pointer'
-				>
-					<Icon
-						as={AiOutlineArrowRight}
-						boxSize={4}
-						color='#dd6b20'
-						bg='##dd6b20'
-					/>
-				</Flex>
-			</Flex>
+			<Slider />
 		</Box>
 	);
 };
