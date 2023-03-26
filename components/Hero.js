@@ -1,7 +1,5 @@
 import { Box, Button, Flex, Heading, IconButton, Text } from "@chakra-ui/react";
 import React from "react";
-import { FiArrowDown } from "react-icons/fi";
-import Link from "next/link";
 
 const Hero = () => {
 	return (
@@ -32,18 +30,20 @@ const Hero = () => {
 					Breakfast Unit
 				</Heading>
 				<Button
-					colorScheme='black'
-					bg='transparent'
-					color='gray.200'
 					variant='outline'
-					width='180px'
-					borderRadius='30px'
+					colorScheme='yellow'
+					color='#fff'
+					className='buttons'
+					size='lg'
+					borderRadius='full'
+					width={200}
 					borderColor='orange.500'
 					display={{ base: "none", lg: "inline-block" }}
 				>
 					Apply Now
 				</Button>
 			</Flex>
+
 			<Flex width={{ base: "100%", lg: "70%" }}>
 				<Box className='line' display={{ base: "none", lg: "inline-block" }} />
 				<Box>
@@ -53,31 +53,21 @@ const Hero = () => {
 					</Text>
 				</Box>
 			</Flex>
+
 			<Button
-				colorScheme='black'
-				bg='transparent'
-				color='gray.200'
 				variant='outline'
-				width='180px'
-				borderRadius='30px'
+				colorScheme='yellow'
+				color='#fff'
+				className='buttons'
+				size='lg'
+				borderRadius='full'
+				width={200}
 				borderColor='orange.500'
 				mt={5}
 				display={{ base: "block", lg: "none" }}
 			>
 				Apply Now
 			</Button>
-			<Link href='#services'>
-				<Box bg='transparent' position='absolute' bottom='1px' right='50%'>
-					<IconButton
-						aria-label='Scroll Down'
-						icon={<FiArrowDown color='gray' />}
-						bg='#262D47'
-						width='50px'
-						height='50px'
-						borderRadius='50%'
-					/>
-				</Box>
-			</Link>
 		</Flex>
 	);
 };

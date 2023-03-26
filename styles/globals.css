@@ -10,6 +10,14 @@ body {
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 }
+.buttons:hover {
+	color: #dd6b20;
+	border: none;
+}
+.links {
+	color: #ddd;
+	cursor: pointer;
+}
 .header {
 	background-image: url("../images/housenearlake.jpg");
 	background-repeat: no-repeat;
@@ -91,4 +99,7 @@ body {
 }
 .deeper {
 	background-color: rgba(19, 24, 44, 60%);
+}
+.mobile__links {
+	margin-bottom: 30px;
 }

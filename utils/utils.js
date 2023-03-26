@@ -1,22 +1,25 @@
-import { Flex, Spacer, Box, Text, Icon } from "@chakra-ui/react";
+import { Flex, Spacer, Box, Text, Icon, IconButton } from "@chakra-ui/react";
 import { AiOutlineClockCircle, AiOutlineLike } from "react-icons/ai";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { FiArrowDown } from "react-icons/fi";
+import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 export const links = [
 	{
 		id: 1,
-		link: "/",
+		link: "home",
 		name: "Home",
 	},
-	{ id: 2, link: "#about", name: "About" },
+	{ id: 2, link: "about", name: "About" },
 	{
 		id: 3,
-		link: "#services",
+		link: "services",
 		name: "Services",
 	},
 	{
 		id: 4,
-		link: "#contact",
+		link: "contact",
 		name: "Contact",
 	},
 ];
@@ -71,4 +74,33 @@ const TextItem = ({ first, icon, text }) => (
 			</Text>
 		</Box>
 	</Flex>
+);
+
+export const BottomArrow = () => (
+	<ScrollLink
+		to='services'
+		activeClass='active'
+		spy={true}
+		smooth={true}
+		offset={-70}
+		duration={500}
+		className='links'
+	>
+		<Flex
+			width='100%'
+			alignItems='center'
+			justifyContent='center'
+			position='absolute'
+			bottom='20px'
+		>
+			<IconButton
+				aria-label='Scroll Down'
+				icon={<FiArrowDown color='gray' />}
+				bg='#262D47'
+				width='50px'
+				height='50px'
+				borderRadius='50%'
+			/>
+		</Flex>
+	</ScrollLink>
 );

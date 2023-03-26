@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const App = () => {
 	return (
-		<Box maxWidth='1280px'>
+		<Box w='full'>
 			<Header />
 			<Main />
 			<Footer />
@@ -15,4 +15,3 @@ const App = () => {
 };
 
 export default App;
-4;

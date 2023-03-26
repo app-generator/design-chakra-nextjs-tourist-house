@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Button, IconButton } from "@chakra-ui/react";
 import React from "react";
 import Nav from "./Nav";
+import { BiArrowToTop } from "react-icons/bi";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
 	return (
@@ -52,9 +54,39 @@ const Footer = () => {
 					direction='column'
 					h='full'
 				>
-					<Box marginBottom='20px'>
+					<Box marginBottom='20px' display={{ base: "none", lg: "block" }}>
 						<Nav />
 					</Box>
+
+					<Flex
+						marginBottom='20px'
+						display={{ base: "flex", lg: "none" }}
+						padding={{ base: "10px 30px", md: "30px 70px" }}
+						alignItems='center'
+						justifyContent='space-between'
+					>
+						<Heading as='h2' size='md' color='#fff'>
+							HOUSE
+						</Heading>
+						<ScrollLink
+							to='home'
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
+						>
+							<IconButton
+								as={BiArrowToTop}
+								bg='transparent'
+								color='#fff'
+								_hover={{ bg: "transparent" }}
+								colorScheme='blue'
+								aria-label='scroll to top'
+								cursor='pointer'
+							/>
+						</ScrollLink>
+					</Flex>
 
 					<Flex
 						alignItems='center'
