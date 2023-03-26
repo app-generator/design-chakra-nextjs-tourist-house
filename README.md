@@ -8,7 +8,12 @@
 
 ## How to use it
 
-@Todo 
+- Clone the repository.
+- Run `yarn install` to install its dependencies.
+- Run `yarn dev` to start the development server.
+
+## Hosting
+The project files are within the out folder. Upload the folder to your hosting source.
 
 <br />
 
