@@ -23,7 +23,7 @@ const MobileNav = ({ setOpenNav }) => {
 						onClick={() => setOpenNav(false)}
 						colorScheme='blue'
 						aria-label='toggle navigation links'
-						icon={<GrClose boxSize={12} />}
+						icon={<GrClose boxsize={12} />}
 					/>
 				</Flex>
 				<Flex spacing={15} direction='column'>
@@ -37,6 +37,7 @@ const MobileNav = ({ setOpenNav }) => {
 							duration={500}
 							className='links mobile__links'
 							onClick={() => setOpenNav(false)}
+							key={li.id}
 						>
 							{li.name}
 						</ScrollLink>

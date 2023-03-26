@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, Text, Button, IconButton } from "@chakra-ui/react";
+import {
+	Box,
+	Flex,
+	Heading,
+	Text,
+	Button,
+	IconButton,
+	Icon,
+} from "@chakra-ui/react";
 import React from "react";
 import Nav from "./Nav";
 import { BiArrowToTop } from "react-icons/bi";
@@ -76,13 +84,10 @@ const Footer = () => {
 							offset={-70}
 							duration={500}
 						>
-							<IconButton
+							<Icon
 								as={BiArrowToTop}
-								bg='transparent'
 								color='#fff'
-								_hover={{ bg: "transparent" }}
-								colorScheme='blue'
-								aria-label='scroll to top'
+								boxSize='30px'
 								cursor='pointer'
 							/>
 						</ScrollLink>

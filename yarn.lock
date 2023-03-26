@@ -2656,6 +2656,11 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
+react-zoom-pan-pinch@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.0.5.tgz#d8af1a8da78c086574da66322a4584dc521db26e"
+  integrity sha512-LhzWCrtIPzgifMrKOUjCzN5zGiZmGa/hzJF7F/Aw8DUXPCq7B/USaX6ICkjeHcsWTzrPWCYvtPJevl95EmDWOQ==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"

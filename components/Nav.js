@@ -40,6 +40,7 @@ const Nav = ({ setOpenNav }) => {
 						offset={-70}
 						duration={500}
 						className='links'
+						key={li.id}
 					>
 						{li.name}
 					</ScrollLink>
@@ -61,7 +62,7 @@ const Nav = ({ setOpenNav }) => {
 					bg='gray.200'
 					colorScheme='blue'
 					aria-label='toggle navigation links'
-					icon={<GrMenu boxSize={14} />}
+					icon={<GrMenu boxsize={14} />}
 				/>
 			</HStack>
 		</Flex>
