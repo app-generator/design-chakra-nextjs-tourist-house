@@ -1,121 +1,42 @@
 import React from "react";
-import { Box, Flex, Heading, Icon, Spacer, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import bedroomR from "../images/bedroomR.png";
-import bedroomL from "../images/bedroomL.png";
-import bedroomC from "../images/bedroomC.png";
-import home1 from "../images/home1.jpg";
-import home2 from "../images/home2.jpg";
-import home3 from "../images/home3.jpg";
-import { FaSearchPlus } from "react-icons/fa";
-
-const BedItem = ({ image, number }) => (
-	<Box position='relative' marginBottom={{ base: "15px", lg: 0 }}>
-		<Image src={image} alt='Home 3' />
-		<Box position='absolute' top='0' zIndex='100' padding='25px 20px'>
-			<Heading as='h3' color='#ED9716' fontWeight='bold'>
-				{number}
-			</Heading>
-			<Text color='#fff' fontWeight='bold'>
-				Bedroom
-			</Text>
-		</Box>
-		<Box position='absolute' bottom='50px' zIndex='100'>
-			<Text className='rotate' color='#f5f5f5'>
-				Text here
-			</Text>
-		</Box>
-	</Box>
-);
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import "react-slideshow-image/dist/styles.css";
+import { Slide } from "react-slideshow-image";
 
 const Bedroom = () => {
+	const slideImages = [
+		{
+			url: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			caption: "Slide 1",
+		},
+		{
+			url: "https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			caption: "Slide 2",
+		},
+		{
+			url: "https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+			caption: "Slide 3",
+		},
+	];
 	return (
-		<Flex
-			position='relative'
-			width='full'
-			alignItems='center'
-			marginBottom='50px'
-			direction={{ base: "column", lg: "row" }}
-		>
-			<Box position='absolute' top='-30px' left='-40px' zIndex='100'>
-				<Image src={bedroomL} alt='Bedroom' />
-			</Box>
-			<Flex
-				position='absolute'
-				top='60px'
-				left='400'
-				zIndex='100'
-				alignItems='center'
-				justifyContent='center'
-			>
-				<Image src={bedroomC} alt='Bedroom' />
-			</Flex>
-			<Box position='absolute' bottom='-30px' right='-40px' zIndex='100'>
-				<Image src={bedroomR} alt='Bedroom' />
-			</Box>
-
-			<BedItem image={home1} number='01' />
-			<Spacer />
-			<Box
-				position='relative'
-				marginTop={{ base: 0, md: 0, lg: 100 }}
-				marginBottom={{ base: 15, md: 15, lg: 0 }}
-			>
-				<Image src={home2} alt='Home 2' />
-				<Box position='absolute' top='0' zIndex='100' padding='25px 20px'>
-					<Heading as='h3' color='#ED9716' fontWeight='bold'>
-						02
-					</Heading>
-					<Text color='#fff' fontWeight='bold'>
-						Bedroom
-					</Text>
-				</Box>
-				<Box position='absolute' bottom='50px' zIndex='100'>
-					<Text className='rotate' color='#f5f5f5'>
-						Text here
-					</Text>
-				</Box>
-				<Flex
-					className='deep'
-					zIndex='100'
-					borderRadius='full'
-					position='absolute'
-					bottom='180px'
-					left='120px'
-					padding='10px'
-					alignItems='center'
-					justifyContent='center'
-					height={102}
-					width={102}
-				>
-					<Flex
-						borderRadius='full'
-						padding='10px'
-						alignItems='center'
-						justifyContent='center'
-						className='deeper'
-					>
+		<Box w='full' margin='70px 0px'>
+			<Slide>
+				{slideImages.map((image, index) => (
+					<Box key={index}>
 						<Flex
-							bg='#13182C'
-							borderRadius='full'
-							padding='10px'
-							alignItems='center'
+							backgroundSize='cover'
 							justifyContent='center'
-							opacity={1}
+							alignItems='center'
+							maxHeight='400px'
+							direction='column'
 						>
-							<Icon
-								as={FaSearchPlus}
-								boxSize={6}
-								color='white'
-								cursor='pointer'
-							/>
+							<Image src={image.url} alt={image.caption} mb='10px' w='full' />
+							<Text color='#f5f5f5'>{image.caption}</Text>
 						</Flex>
-					</Flex>
-				</Flex>
-			</Box>
-			<Spacer />
-			<BedItem image={home3} number='03' />
-		</Flex>
+					</Box>
+				))}
+			</Slide>
+		</Box>
 	);
 };
 

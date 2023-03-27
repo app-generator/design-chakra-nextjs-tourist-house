@@ -4,7 +4,6 @@ import Image from "next/image";
 import gallery from "../images/gallery.png";
 import ellipse from "../images/ellipse.png";
 import Bedroom from "./Bedroom";
-import Slider from "./Slider";
 
 const Gallery = () => {
 	return (
@@ -28,7 +27,7 @@ const Gallery = () => {
 			<Flex
 				w='full'
 				alignItems='flex-start'
-				marginBottom='70px'
+				marginBottom={{ base: "0px", md: "70px" }}
 				direction={{ base: "column", md: "column", lg: "row" }}
 			>
 				<Box
@@ -51,7 +50,6 @@ const Gallery = () => {
 			</Flex>
 
 			<Bedroom />
-			<Slider />
 		</Box>
 	);
 };

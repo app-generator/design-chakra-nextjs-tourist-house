@@ -20,7 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
-    "react-zoom-pan-pinch": "^3.0.5"
+    "react-slideshow-image": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "8.21.0",
