@@ -9,7 +9,7 @@ Open-Source **[Tourist House Design](https://github.com/app-generator/design-nex
 
 > `Need More?` **🛒 [BUY License](https://appseed.gumroad.com/l/design-nextjs-tourist-house)**: `ONLY $19` (one-time payment via GUMROAD) 
 
-- Access to [FIGMA File](https://bit.ly/figma-nextjs-tourist-house) `view demo`
+- Access to [FIGMA File](https://bit.ly/figma-tourist-house-mountain) `view demo`
 - `Remove Footer Credits`
 - `Updates`: Lifetime
 - `Unlimited` hobby & commercial `projects` 
