@@ -8,7 +8,7 @@ Open-Source **Tourist House Design** Template powered by **[Chakra UI and Next J
 
 <br />
 
-> `Need More?` **🛒 [BUY FIGMA Design](https://appseed.gumroad.com/l/design-nextjs-tourist-house)**: `ONLY $19` (one-time payment via GUMROAD) 
+> `Need More?` **🛒 [BUY Figma Design](https://appseed.gumroad.com/l/design-nextjs-tourist-house)**: `ONLY $19` (one-time payment via GUMROAD) 
 
 - [FIGMA File](https://bit.ly/figma-tourist-house-mountain) `view demo`
 - 🚀 Premium [Support](https://appseed.us/support/) (Email & Discord)
