@@ -103,12 +103,7 @@ const Footer = () => {
 						<Text color='#C0C4D3' fontSize='sm'>
 							<div class="copy-right">
 								&copy; <a target="_blank" href="https://appseed.us/">AppSeed</a>
-								{' - '}
-								<a
-								target="_blank"
-								href="https://github.com/app-generator/license-ccby30"
-								>CCBY3.0 License</a
-								>
+								{' - MIT License'}
 							</div>
 						</Text>
 					</Flex>

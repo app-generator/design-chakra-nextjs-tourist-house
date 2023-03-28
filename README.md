@@ -3,17 +3,14 @@
 Open-Source **[Tourist House Design](https://github.com/app-generator/design-nextjs-tourist-house-mountain)** Template powered by **Chakra UI** and **NextJS** - Actively supported by [AppSeed](https://appseed.us/).
 
 - 👉 [NextJS Tourist House](https://nextjs-tourist-house.onrender.com/): `LIVE DEMO`
-- 👉 `License` [CC BY 3.0](./LICENSE.md) - `Preserve footer credit`
+- ✅ `MIT License` 
 
 <br />
 
 > `Need More?` **🛒 [BUY License](https://appseed.gumroad.com/l/design-nextjs-tourist-house)**: `ONLY $19` (one-time payment via GUMROAD) 
 
 - Access to [FIGMA File](https://bit.ly/figma-tourist-house-mountain) `view demo`
-- `Remove Footer Credits`
-- `Updates`: Lifetime
-- `Unlimited` hobby & commercial `projects` 
-- 🚀 Free [Support](https://appseed.us/support/) (Email & Discord)
+- 🚀 Premium [Support](https://appseed.us/support/) (Email & Discord)
 
 <br />
 

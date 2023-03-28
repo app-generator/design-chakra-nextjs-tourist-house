@@ -1,21 +1,30 @@
-# [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/)
+# MIT License
 
-Copyright (c) [AppSeed](https://appseed.us/)
-
-<br />
-
-## You are allowed to:
-
-- **Share** — copy and redistribute the material in any medium or format (unlimited copies)
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
-
-> Note: `AppSeed` cannot revoke these freedoms as long as you follow the license terms.
+Copyright (c) 2019 - present [AppSeed](http://appseed.us/)
 
 <br />
 
-## You are NOT allowed:
+## Licensing Information
 
-- **Remove Footer Attribution**
+<br />
+
+| Item | - |
+| ---------------------------------- | --- |
+| License Type | MIT  |
+| Use for print | **YES** |
+| Create single personal website/app | **YES** |
+| Create single website/app for client | **YES** |
+| Create multiple website/apps for clients | **YES** |
+| Create multiple SaaS applications | **YES** |
+| End-product paying users | **YES** |
+| Product sale | **YES** |
+| Remove footer credits | **YES** |
+| --- | --- |
+| Remove copyright mentions from source code | NO |
+| Production deployment assistance | NO |
+| Create HTML/CSS template for sale | NO |
+| Create Theme/Template for CMS for sale | NO |
+| Separate sale of our UI Elements | NO |
 
 <br />
 
