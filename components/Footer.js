@@ -31,15 +31,16 @@ const Footer = () => {
 					padding={70}
 				>
 					<Heading as='h2' size='lg' color='#f5f5f5' marginBottom={5}>
-						Contrary to popular belief,
+						Contact us via email or simply 
 					</Heading>
 
 					<Heading as='h2' size='lg' color='#f5f5f5' marginBottom={5}>
-						Lorem Ipsum
+						call us +40-332-332-332
 					</Heading>
+					
 					<Box className='line' width={150} marginBottom={5} />
 					<Text color='#f5f5f5' marginBottom={5}>
-						Fact that a reader will be distracted by the readable
+						Connect to nature and rest your mind
 					</Text>
 					<Button
 						colorScheme='yellow'
@@ -49,7 +50,7 @@ const Footer = () => {
 						borderRadius='full'
 						width={200}
 					>
-						Button
+						Book a Room
 					</Button>
 				</Flex>
 			</Box>
@@ -100,7 +101,15 @@ const Footer = () => {
 						w='full'
 					>
 						<Text color='#C0C4D3' fontSize='sm'>
-							Copyright © Home. {new Date().getFullYear()}. All rights reserved.
+							<div class="copy-right">
+								&copy; <a target="_blank" href="https://appseed.us/">AppSeed</a>
+								{' - '}
+								<a
+								target="_blank"
+								href="https://github.com/app-generator/license-ccby30"
+								>CCBY3.0 License</a
+								>
+							</div>
 						</Text>
 					</Flex>
 				</Flex>

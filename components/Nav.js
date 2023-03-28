@@ -46,6 +46,7 @@ const Nav = ({ setOpenNav }) => {
 					</ScrollLink>
 				))}
 			</HStack>
+			
 			<Spacer />
 
 			<HStack spacing='30px' display={{ base: "none", lg: "inline-block" }}>

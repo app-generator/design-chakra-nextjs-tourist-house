@@ -6,22 +6,19 @@ import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
 export const links = [
+	{ 	id: 1, 
+		link: "about", 
+		name: "About" },
 	{
-		id: 1,
-		link: "home",
-		name: "Home",
-	},
-	{ id: 2, link: "about", name: "About" },
-	{
-		id: 3,
+		id: 2,
 		link: "services",
 		name: "Services",
 	},
 	{
-		id: 4,
+		id: 3,
 		link: "contact",
 		name: "Contact",
-	},
+	}	
 ];
 
 export const IconText = () => (

@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.1] 2023-03-28
+### Changes
+
+- Links Update
+- DOCS Update (minor)
+
 ## [1.0.0] 2023-03-28
 ### STABLE Version
 
